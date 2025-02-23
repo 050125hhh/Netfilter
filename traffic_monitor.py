@@ -78,9 +78,9 @@ class TrafficClassifier:
 # 流量拦截类
 class TrafficInterceptor:
     def __init__(self):
-        # 配置日志记录
+        # 配置日志记录（可以根据自己的要求来设置日志的级别，debug更详细,info粗略点）
         logging.basicConfig(
-            level=logging.INFO,
+            level=logging.DEBUG,
             format="%(asctime)s - %(levelname)s - %(message)s",
             handlers=[
                 logging.FileHandler("traffic_intercept.log"),  # 记录到文件
